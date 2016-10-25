@@ -10,7 +10,35 @@
 		BE10A8A21DBF518B00B1C4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10A8A11DBF518B00B1C4C3 /* AppDelegate.swift */; };
 		BE10A8A41DBF518B00B1C4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE10A8A31DBF518B00B1C4C3 /* Assets.xcassets */; };
 		BE10A8A71DBF518B00B1C4C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE10A8A51DBF518B00B1C4C3 /* MainMenu.xib */; };
+		BE10A8B51DBF51C200B1C4C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A8B41DBF51C200B1C4C3 /* Cocoa.framework */; };
+		BE10A8BA1DBF51C200B1C4C3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10A8B91DBF51C200B1C4C3 /* SourceEditorExtension.swift */; };
+		BE10A8BC1DBF51C200B1C4C3 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10A8BB1DBF51C200B1C4C3 /* SourceEditorCommand.swift */; };
+		BE10A8C01DBF51C200B1C4C3 /* Propertizer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE10A8B21DBF51C200B1C4C3 /* Propertizer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE10A8BE1DBF51C200B1C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE10A8961DBF518A00B1C4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE10A8B11DBF51C200B1C4C3;
+			remoteInfo = Propertizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE10A8C41DBF51C200B1C4C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE10A8C01DBF51C200B1C4C3 /* Propertizer.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE10A89E1DBF518B00B1C4C3 /* PropertyAutocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyAutocomplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +46,12 @@
 		BE10A8A31DBF518B00B1C4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE10A8A61DBF518B00B1C4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BE10A8A81DBF518B00B1C4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE10A8B21DBF51C200B1C4C3 /* Propertizer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Propertizer.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE10A8B41DBF51C200B1C4C3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BE10A8B81DBF51C200B1C4C3 /* Propertizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Propertizer.entitlements; sourceTree = "<group>"; };
+		BE10A8B91DBF51C200B1C4C3 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		BE10A8BB1DBF51C200B1C4C3 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		BE10A8BD1DBF51C200B1C4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE10A8AF1DBF51C200B1C4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE10A8B51DBF51C200B1C4C3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				BE10A8A01DBF518B00B1C4C3 /* PropertyAutocomplete */,
+				BE10A8B61DBF51C200B1C4C3 /* Propertizer */,
+				BE10A8B31DBF51C200B1C4C3 /* Frameworks */,
 				BE10A89F1DBF518B00B1C4C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BE10A89E1DBF518B00B1C4C3 /* PropertyAutocomplete.app */,
+				BE10A8B21DBF51C200B1C4C3 /* Propertizer.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +103,33 @@
 			path = PropertyAutocomplete;
 			sourceTree = "<group>";
 		};
+		BE10A8B31DBF51C200B1C4C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE10A8B41DBF51C200B1C4C3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE10A8B61DBF51C200B1C4C3 /* Propertizer */ = {
+			isa = PBXGroup;
+			children = (
+				BE10A8B91DBF51C200B1C4C3 /* SourceEditorExtension.swift */,
+				BE10A8BB1DBF51C200B1C4C3 /* SourceEditorCommand.swift */,
+				BE10A8BD1DBF51C200B1C4C3 /* Info.plist */,
+				BE10A8B71DBF51C200B1C4C3 /* Supporting Files */,
+			);
+			path = Propertizer;
+			sourceTree = "<group>";
+		};
+		BE10A8B71DBF51C200B1C4C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE10A8B81DBF51C200B1C4C3 /* Propertizer.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,15 +140,34 @@
 				BE10A89A1DBF518B00B1C4C3 /* Sources */,
 				BE10A89B1DBF518B00B1C4C3 /* Frameworks */,
 				BE10A89C1DBF518B00B1C4C3 /* Resources */,
+				BE10A8C41DBF51C200B1C4C3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE10A8BF1DBF51C200B1C4C3 /* PBXTargetDependency */,
 			);
 			name = PropertyAutocomplete;
 			productName = PropertyAutocomplete;
 			productReference = BE10A89E1DBF518B00B1C4C3 /* PropertyAutocomplete.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BE10A8B11DBF51C200B1C4C3 /* Propertizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE10A8C11DBF51C200B1C4C3 /* Build configuration list for PBXNativeTarget "Propertizer" */;
+			buildPhases = (
+				BE10A8AE1DBF51C200B1C4C3 /* Sources */,
+				BE10A8AF1DBF51C200B1C4C3 /* Frameworks */,
+				BE10A8B01DBF51C200B1C4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Propertizer;
+			productName = Propertizer;
+			productReference = BE10A8B21DBF51C200B1C4C3 /* Propertizer.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -89,6 +180,11 @@
 				ORGANIZATIONNAME = "Josip Bernat";
 				TargetAttributes = {
 					BE10A89D1DBF518B00B1C4C3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HYQQ2BB29C;
+						ProvisioningStyle = Automatic;
+					};
+					BE10A8B11DBF51C200B1C4C3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = HYQQ2BB29C;
 						ProvisioningStyle = Automatic;
@@ -109,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				BE10A89D1DBF518B00B1C4C3 /* PropertyAutocomplete */,
+				BE10A8B11DBF51C200B1C4C3 /* Propertizer */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE10A8B01DBF51C200B1C4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,7 +238,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE10A8AE1DBF51C200B1C4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE10A8BA1DBF51C200B1C4C3 /* SourceEditorExtension.swift in Sources */,
+				BE10A8BC1DBF51C200B1C4C3 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE10A8BF1DBF51C200B1C4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE10A8B11DBF51C200B1C4C3 /* Propertizer */;
+			targetProxy = BE10A8BE1DBF51C200B1C4C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BE10A8A51DBF518B00B1C4C3 /* MainMenu.xib */ = {
@@ -241,7 +362,9 @@
 		BE10A8AC1DBF518B00B1C4C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HYQQ2BB29C;
 				INFOPLIST_FILE = PropertyAutocomplete/Info.plist;
@@ -255,13 +378,49 @@
 		BE10A8AD1DBF518B00B1C4C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HYQQ2BB29C;
 				INFOPLIST_FILE = PropertyAutocomplete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.josipbernat.PropertyAutocomplete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BE10A8C21DBF51C200B1C4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Propertizer/Propertizer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HYQQ2BB29C;
+				INFOPLIST_FILE = Propertizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josipbernat.PropertyAutocomplete.Propertizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE10A8C31DBF51C200B1C4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Propertizer/Propertizer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HYQQ2BB29C;
+				INFOPLIST_FILE = Propertizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josipbernat.PropertyAutocomplete.Propertizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -285,6 +444,16 @@
 				BE10A8AD1DBF518B00B1C4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE10A8C11DBF51C200B1C4C3 /* Build configuration list for PBXNativeTarget "Propertizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE10A8C21DBF51C200B1C4C3 /* Debug */,
+				BE10A8C31DBF51C200B1C4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

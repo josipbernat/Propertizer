@@ -4,15 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Propertizer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>PropertyAutocomplete.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>BE10A89D1DBF518B00B1C4C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE10A8B11DBF51C200B1C4C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE8888AB1DBF61B700458316</key>
 		<dict>
 			<key>primary</key>
 			<true/>
