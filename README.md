@@ -16,3 +16,6 @@ During Alcatraz plugin era I used a plugin which helped me autocomplete @propert
 - Open Xcode
 - Select a source file
 - Use it using `Editor -> Propertizer -> some command...` 
+
+##Note
+- Sometimes Propertizer doesn't show in Editor menu even you did instalation guide steps. Open up Xcode and launch Propertizer, it should appear in Editor menu. From now on you don't have to launch Propertizer app.
