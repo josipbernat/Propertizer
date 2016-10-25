@@ -44,25 +44,25 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
                     
                     switch invocation.commandIdentifier {
                     case PropertizerCommand.StrongNonatomic.rawValue:
-                        buffer.lines.insert("@property(strong, nonatomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (strong, nonatomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.StrongAtomic.rawValue:
-                        buffer.lines.insert("@property(strong, atomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (strong, atomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.WeakNonatomic.rawValue:
-                        buffer.lines.insert("@property(weak, nonatomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (weak, nonatomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.WeakAtomic.rawValue:
-                        buffer.lines.insert("@property(weak, atomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (weak, atomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.ReadwriteNonatomic.rawValue:
-                        buffer.lines.insert("@property(readwrite, nonatomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (readwrite, nonatomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.ReadwriteAtomic.rawValue:
-                        buffer.lines.insert("@property(readwrite, atomic)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (readwrite, atomic) <#statements#>;", at: currentLine)
                         
                     case PropertizerCommand.Copy.rawValue:
-                        buffer.lines.insert("@property(copy)<#statements#>;", at: currentLine)
+                        buffer.lines.insert("@property (copy) <#statements#>;", at: currentLine)
                         
                     default: break
                     }
