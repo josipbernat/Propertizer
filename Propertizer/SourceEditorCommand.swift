@@ -31,7 +31,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         
         let buffer = invocation.buffer
         
-        if buffer.contentUTI != kUTTypeObjectiveCSource as String {
+        if (buffer.contentUTI == kUTTypeObjectiveCSource as String ||
+            buffer.contentUTI == kUTTypeCHeader as String ||
+            buffer.contentUTI == kUTTypeObjectiveCPlusPlusSource as String) == false {
+            
             completionHandler(NSError(domain:PropertizerErrorDomain, code:PropertizerErrorCode.InvalidFile.rawValue, userInfo:[NSLocalizedDescriptionKey: "Selected file isn't Objective-C file"]))
         }
         else {
