@@ -9,7 +9,7 @@ During Alcatraz plugin era I used a plugin which helped me autocomplete @propert
 
 - Close Xcode
 - (*OSX 10.11 only*) `sudo /usr/libexec/xpccachectl`
-- Download the [Propertizer app](https://github.com/josipbernat/Propertizer/files/550601/Propertizer.app.zip)
+- Download the [Propertizer app](https://github.com/josipbernat/Propertizer/files/555256/Propertizer.app.zip)
 - Unzip and copy to Applications folder
 - Run (right click + open)
 - ` -> System Preferences... -> Extensions -> All -> Enable Propertizer`
